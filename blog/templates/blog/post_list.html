@@ -7,22 +7,40 @@
 <body>
 	<h1>ANIMALES CARNIVOROS</h1>
 	<a href="djangogirls.com"></a>
-	<p>Sobre la Tierra existen miles de animales, todos ellos diferentes. Se diferencian por el lugar donde viven, por el hábitat y la zona geográfica, por el tamaño, el tipo de piel, el tipo de caza y por el tipo de alimentos que consumen. Todas estas diferencias son las que se usan a la hora de clasificarlos, y una de las grandes clasificaciones es Animales Carnívoros, si querés saber de que se trata, entrá aca.
-	</p>
+	<div>
+
+        {% for post in posts %}
+            <h1>{{ post.title }}</h1>
+            <p>{{ post.text }}</p>
+            <br>
+            <span style="text-align: right">{{ post.author }}</span>
+            <br>
+            <hr>
+        {% endfor %}
+
+{#        Este es el primer post <br>#}
+
+{#        <h1 style="color: #cc1111">{{ primer_post.title }}</h1>#}
+{#        <p>{{ primer_post.text }}</p>#}
+
+
+
+    </div>
 	<br>
-	<img  src="http://www.infoanimales.com/wp-content/uploads/2011/12/tortuga-terrestre-1.jpg" alt:"Delfines">
-	<br>
-	
-	<h2>ANIMALES ACUATICOS</h2>
-	<p>Cabe destacar que cuando hablamos de carnívoros, hablamos de organismos que lo son, debido a que no son solamente animales sino también pueden ser plantas, e incluso existen hongos carnívoros.
-
-    Ahora bien, existen los llamados carnívoros obligados, que son aquellos que forman su dieta exclusivamente de carne, debido a que su organismo no está fisiológicamente preparado para poder digerir otro tipo de alimentos. Existen algunos que pueden llegar a consumir algún derivado de productos animales como la miel, pero pueden tranquilamente subsistir sin ella, no así sin la carne.
-
-    Se denomina Hipecarnivoro a aquellos que consumen un 70 % o más de carne y se llama Hipocarnivoro a aquellos que consumen un 30%  o menos de carne.
-
-    </p>
     <br>
-	<img src="http://www.infoanimales.com/wp-content/uploads/2012/01/delfin2.jpg" alt:"Tortuga">
+{#	<img  src="http://www.infoanimales.com/wp-content/uploads/2011/12/tortuga-terrestre-1.jpg" alt:"Delfines">#}
+{#	<br>#}
+{#	#}
+{#	<h2>ANIMALES ACUATICOS</h2>#}
+{#	<p>Cabe destacar que cuando hablamos de carnívoros, hablamos de organismos que lo son, debido a que no son solamente animales sino también pueden ser plantas, e incluso existen hongos carnívoros.#}
+{##}
+{#    Ahora bien, existen los llamados carnívoros obligados, que son aquellos que forman su dieta exclusivamente de carne, debido a que su organismo no está fisiológicamente preparado para poder digerir otro tipo de alimentos. Existen algunos que pueden llegar a consumir algún derivado de productos animales como la miel, pero pueden tranquilamente subsistir sin ella, no así sin la carne.#}
+{##}
+{#    Se denomina Hipecarnivoro a aquellos que consumen un 70 % o más de carne y se llama Hipocarnivoro a aquellos que consumen un 30%  o menos de carne.#}
+{##}
+{#    </p>#}
+{#    <br>#}
+{#	<img src="http://www.infoanimales.com/wp-content/uploads/2012/01/delfin2.jpg" alt:"Tortuga">#}
 
 </body>
 
